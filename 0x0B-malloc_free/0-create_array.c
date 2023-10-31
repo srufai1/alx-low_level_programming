@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * create_array- function to create an array of characters,
@@ -23,4 +23,5 @@ char *create_array(unsigned int size, char c)
 		array[i] = c;
 	}
 	return (array);
+	free(array);
 }
