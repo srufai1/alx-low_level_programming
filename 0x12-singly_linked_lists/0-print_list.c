@@ -11,6 +11,7 @@ size_t num = 0;
 
 while (h)
 {
+<<<<<<< HEAD
 if (h->str == NULL)
 {
 printf("[0]\t(nil)\n");
@@ -23,4 +24,18 @@ num++;
 h = h->next;
 }
 return (num);
+=======
+	if(h->str ==NULL)
+	{
+	printf("[0]\t(nil)\n");
+	}
+	else
+	{
+	printf("[%d]\t%s\n",h->len, h->str);
+	}
+	num++;
+	h = h->next;
+}
+return num;
+>>>>>>> 6f743b51bf2d1576fdbdc175dce1fc7a5b01af72
 }
